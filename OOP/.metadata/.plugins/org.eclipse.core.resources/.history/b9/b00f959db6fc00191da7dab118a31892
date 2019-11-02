@@ -1,0 +1,12 @@
+class castingException extends Exception{}
+public class casting {
+
+	
+	public void castArr() throws castingException {
+		
+		throw new castingException();
+		
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+package com.dalal.web.models;
+
+public class Dog extends Animal implements Pet{
+
+	public Dog(String name, String breed, double weight) {
+		super(name, breed, weight);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String showAffection() {
+		String msg= "you created a "+this.breed+"!"+"\\r\\n";
+		
+		if(this.weight<30)
+			msg+= this.name+" hopped into your lap and cuddled you!";
+		else
+			msg+= "have them curl up next to you!";
+		return msg;
+	}
+
+}

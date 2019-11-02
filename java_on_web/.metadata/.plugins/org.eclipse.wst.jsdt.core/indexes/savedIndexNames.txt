@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/dalalmansour/Desktop/java_stack/java_on_web/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3118138778.index
+1980821356.index
+2197673429.index
+3669684667.index
+2820279642.index
+2757293863.index
+4028323202.index

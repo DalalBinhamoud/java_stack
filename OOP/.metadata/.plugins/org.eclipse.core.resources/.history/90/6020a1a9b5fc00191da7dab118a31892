@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+class ClassCastException extends Exception{}
+public class DelevriedMsg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ArrayList<Object> myList = new ArrayList<Object>();
+		myList.add(10);
+		myList.add("hello world");
+		myList.add(48);
+		myList.add("Goodbye World");
+		
+		
+		for(int i = 0; i < myList.size(); i++){
+			
+			try {
+		    Integer castedValue = (Integer) myList.get(i);
+		    System.out.println(castedValue);  
+		    throw new ClassCastException();
+			}catch(ClassCastException e) {
+				
+				System.out.println(e);
+				System.out.println("you cann't cast this object to integer");
+			}
+		}
+
+	}
+
+}

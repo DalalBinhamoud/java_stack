@@ -1,0 +1,31 @@
+//import java.util.ArrayList;
+//class castingException extends Exception{}
+//public class casting {
+//
+//	
+//	public void castArr(ArrayList<Object> myList) throws castingException {
+//		
+//		for(int i = 0; i < myList.size(); i++) {
+//		    Integer castedValue = (Integer) myList.get(i);
+//		 
+//		}
+//		   throw new castingException();
+////		throw new castingException();
+//		
+//	}
+//	
+//	
+//}
+import java.util.ArrayList;
+import java.util.Random;
+class castingException extends Exception{}
+class casting {
+    public boolean deliverMessage(ArrayList<Object> myList) throws castingException{
+        Random r = new Random();
+        boolean hasGas = r.nextBoolean();
+        if (hasGas){
+            return true;
+        }
+        throw new castingException();
+    }
+}

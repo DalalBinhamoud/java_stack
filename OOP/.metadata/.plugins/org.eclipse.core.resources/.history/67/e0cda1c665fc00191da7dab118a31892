@@ -1,0 +1,38 @@
+package claculator;
+
+import java.io.Serializable;
+
+public class Calculator implements Serializable {
+	
+	int oprand1;
+	int oprand2;
+	String operation;
+	int result;
+	
+	
+public void setOperandOne(int oprand1) {
+	this.oprand1 = oprand1;
+	
+}
+public void setOperation(String operation) {
+	this.operation = operation;
+}
+
+public void setOperandTwo(int oprand2) {
+	this.oprand2 = oprand2;
+}
+
+public int getResults() {
+	
+	  if (this.operation.equals("+")) {
+		  this.result = oprand1 + oprand2;
+		    } else if (this.operation.equals("-")){
+		    	this.result = oprand1 - oprand2;
+		    } else if (this.operation.equals("*")){
+		    	this.result = oprand1 * oprand2;
+		    } else if (this.operation.equals("/")){
+		    	this.result = oprand1 / oprand2;
+}
+	  return this.result;
+}
+}

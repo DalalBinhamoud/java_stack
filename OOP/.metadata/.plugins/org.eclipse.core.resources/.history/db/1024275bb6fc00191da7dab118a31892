@@ -1,0 +1,14 @@
+class castingException extends Exception{}
+public class casting {
+
+	
+	public Integer castArr() throws castingException {
+		
+		
+		
+		throw new castingException();
+		
+	}
+	
+	
+}

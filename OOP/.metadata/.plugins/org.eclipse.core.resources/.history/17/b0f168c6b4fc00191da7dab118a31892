@@ -1,0 +1,15 @@
+
+public class casting {
+
+	
+	public Integer castArr() throws castingException {
+		
+		return 4;
+		
+		throw new castingException();
+		
+		
+	}
+	
+	
+}
