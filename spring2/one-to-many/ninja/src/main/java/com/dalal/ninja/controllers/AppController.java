@@ -30,7 +30,8 @@ public class AppController {
 	 
 	 
 	  @RequestMapping("/dojos/new")
-	  public String newDojo(@ModelAttribute("dojo") Dojo dojo) { 	  		  	
+	  public String newDojo(@ModelAttribute("dojo") Dojo dojo) { 	
+		  dojoService.test();
       return "/dojos/new.jsp";
   }
 
