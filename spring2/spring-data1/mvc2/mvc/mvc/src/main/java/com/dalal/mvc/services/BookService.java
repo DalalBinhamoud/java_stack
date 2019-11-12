@@ -44,6 +44,15 @@ public Book updateBook(Long id,String title,String desc,String lang,Integer numO
         return bookRepository.save(upBook);
     }
 
+public Book updateBook(Book b) {
+	Book upBook = this.findBook(b.getId());
+	 upBook.setTitle(b.getTitle());
+	   upBook.setDescription(b.getDescription());
+	   upBook.setLanguage(b.getLanguage());
+	   upBook.setNumberOfPages(b.getNumberOfPages());
+	return bookRepository.save(upBook);
+}
+
 public void deleteBook(Long id) {
 	bookRepository.deleteById(id);
 }
